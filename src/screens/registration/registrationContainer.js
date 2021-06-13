@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import RegistrationView from './registrationView';
 
 const RegistrationContainer = () => {
 
-    const [registrationFormData, setRegistrationFormData] = useState({
-        name: '',
-        email: '',
-        password: '',
-        userType: '',
-    });
+    const handleSubmit = (values) => {
+        console.log(values);
+    }
 
-    return <RegistrationView />
+    return <RegistrationView handleSubmit={handleSubmit} />
 
 }
 

@@ -8,14 +8,14 @@ const Banner  = () => {
     const classes = useStyles();
 
     return <React.Fragment>
-        <Typography className={classes.banner}>
+        <div className={classes.banner}>
             <Typography variant="h4" component="h4" className={classes.bannerHeader}>
                 Dummy Heading
             </Typography>
             <Typography variant="body1" component="span" className={classes.bannerText}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </Typography>
-        </Typography>
+        </div>
     </React.Fragment>
 }
 
