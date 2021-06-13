@@ -1,5 +1,5 @@
 import React from 'react';
-import { CssBaseline, Container, Grid, makeStyles } from '@material-ui/core';
+import { Container, Grid, makeStyles } from '@material-ui/core';
 import { Step1Form } from "./components"
 import { Banner } from "../../components"
 
@@ -9,13 +9,12 @@ const RegistrationView = (props) => {
     const { handleSubmit } = props;
 
     return <React.Fragment>
-        <CssBaseline />
         <Container maxWidth="xl" className={classes.root}>
             <Grid container spacing={2}>
-                <Grid item xs={8} md={8} >
+                <Grid item md={8} >
                     <Step1Form handleSubmit={handleSubmit} />
                 </Grid>
-                <Grid item xs={4} md={4}>
+                <Grid item md={4}>
                     <Banner />
                 </Grid>
             </Grid>

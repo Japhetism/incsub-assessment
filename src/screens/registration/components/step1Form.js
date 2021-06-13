@@ -50,6 +50,9 @@ const Step1Form  = (props) => {
     return (
         <Container maxWidth="xl" className={classes.root}>
             <form onSubmit={formik.handleSubmit} className={classes.form}>
+                <Typography variant="body2" component="span" className={classes.step}>
+                    Step 1 of 3
+                </Typography>
                 <Typography variant="h4" component="h4" className={classes.header}>
                     Let's setup your account
                 </Typography>
@@ -169,18 +172,18 @@ const Step1Form  = (props) => {
 const useStyles = makeStyles(() => ({
     root: {
         backgroundColor: '#FFFFFF',
-        marginLeft: '-5%',
-        marginTop: '0%',
+        marginLeft: '-3%',
     },
     form: {
         margin: '0% 20% 0% 20%',
         width: '60%',
-        paddingTop: '20%',
+        paddingTop: '10%',
         paddingBottom: '25%'
     },
     header: {
         fontWeight: 'bold',
         marginBottom: '10%',
+        marginTop: '20%'
     },
     headerBody: {
         marginBottom: '5%',
@@ -210,6 +213,10 @@ const useStyles = makeStyles(() => ({
         color: '#3358FF',
         fontWeight: 'bold',
         cursor: 'pointer',
+    },
+    step: {
+        marginLeft: '85%',
+        marginBottom: '25%'
     }
 }));
 
